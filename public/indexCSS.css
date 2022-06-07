@@ -61,3 +61,26 @@
     border-color: #ffff;
     color: #ffff;
 }
+.decode-div{
+  text-align: center; 
+
+}
+#herelnk{
+  color: aqua;
+}
+#btn2{
+  padding: 10px;    
+    border-radius: 10px;
+    background-color: #ffff;
+    transition-duration: 0.2s;
+}
+#btn2:hover{
+  padding: 10px;    
+  border-radius: 10px;
+  background-color: #000;
+  border-color: #ffff;
+  color: #ffff;
+}
+.decode-div{
+  margin-top: 250px;
+}
