@@ -60,6 +60,7 @@
     background-color: #000;
     border-color: #ffff;
     color: #ffff;
+    cursor: pointer;
 }
 .decode-div{
   text-align: center; 
@@ -80,7 +81,12 @@
   background-color: #000;
   border-color: #ffff;
   color: #ffff;
+  cursor: pointer;
 }
 .decode-div{
   margin-top: 250px;
+}
+#me{
+  color: rgb(41, 4, 255);
+  cursor:progress;
 }

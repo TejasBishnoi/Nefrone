@@ -66,11 +66,16 @@ function replacethechar(inputval){
     
     }
     console.log(inputval);
-    alert("the encrypted langauge is :"+ " "+inputval);
+  //  alert("the encrypted langauge is :"+ " "+inputval);
+    sessionStorage.setItem("translate", inputval)
+    window.location="result/result.html";
 }
     String.prototype.replaceAt = function(index, replacement) {
         return this.substring(0, index) + replacement + this.substring(index + replacement.length);
     }
     function redirecttodecode(){
         window.location = "decode/decode.html";
+    }
+    function redirecttotejas(){
+        window.location = "https://tejasbishnoipersonal.web.app";
     }
