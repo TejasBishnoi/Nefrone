@@ -7,10 +7,15 @@ function replacethechar(inputval){
 
      console.log(inputval.length)
       for (var i = -1; i < inputval.length; i++) {
-          
-        if ( inputval.charAt(i)=="s") {
-            inputval = inputval.replaceAt(i,"a")
-            
+       if  (inputval.charAt(i)=="("){
+           inputval = inputval.replaceAt(i,"u")
+       }else if (inputval.charAt(i)==")"){
+           inputval = inputval.replaceAt(i,"ㅤ")
+       }
+        else if (inputval.charAt(i)==" "){
+            inputval = inputval.replaceAt(i," ") 
+        }else if ( inputval.charAt(i)=="s") {
+            inputval = inputval.replaceAt(i,"a") 
          // console.log(inputval.charAt(i));
         }else if( inputval.charAt(i)=="r"){
             inputval = inputval.replaceAt(i,"b")
@@ -50,8 +55,7 @@ function replacethechar(inputval){
             inputval = inputval.replaceAt(i,"s")
         }else if( inputval.charAt(i)=="y"){
             inputval = inputval.replaceAt(i,"t")
-        }else if( inputval.charAt(i)=="()"){
-            inputval = inputval.replaceAt(i,"u")
+        
         }else if( inputval.charAt(i)=="d"){
             inputval = inputval.replaceAt(i,"v")
         }else if( inputval.charAt(i)==">"){
